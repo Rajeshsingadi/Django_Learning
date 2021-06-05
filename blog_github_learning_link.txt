@@ -1,0 +1,11 @@
+https://github.com/academind/django-practical-guide-course-code/tree/prj-urls-views-templates-01-adding-urls-and-views
+
+css styles
+https://github.com/academind/django-practical-guide-course-code/tree/prj-urls-views-templates-zz-extra-files/css-files
+
+django-Learning_database
+https://docs.djangoproject.com/en/3.1/topics/db/queries/#deleting-objects
+
+https://docs.djangoproject.com/en/3.0/ref/models/querysets/#bulk-update
+
+https://docs.djangoproject.com/en/3.0/ref/models/querysets/#bulk-create

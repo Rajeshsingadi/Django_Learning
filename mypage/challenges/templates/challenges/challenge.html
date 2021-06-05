@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_files %}
+<link rel="stylesheet" href="{% static "challenges/includes/challenge_index.css" %}">
+<link rel="stylesheet" href="{% static "challenges/includes/header.css" %}">
+{% endblock  %}
+
+{% block page_title %}
+The {{text2| title}} Challenges
+{% endblock  %}
+
+
+{% block content %}
+
+{% include "challenges/includes/header.html" %}
+
+<h1>
+    This is a {{text2 | title}} learning month
+</h1>
+
+<h1>This is dynamically adding html content</h1>
+<h1>{{text| title}}</h1>
+{% comment %} <h2>{{text2}}</h2> {% endcomment %}
+
+{%if text is not None %}
+   <h2>{{text}}</h2>
+{%else %}
+    <p class="fallback"><h2>This month not came yet!<h2></p>
+{% endif %}
+
+{% endblock  %}
+  
+
+
+{% comment %} <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>The Monthly Challenges</title> -->
+    <title>The {{text2| title}} Challenges</title>
+</head>
+
+<body>
+    <h1>
+        This is a {{text2}} learning month
+    </h1>
+   <hr>
+    <h1>This is dynamically adding html content</h1>
+    <h1>{{text| title}}</h1>
+    {% comment %} <h2>{{text2}}</h2> {% endcomment %}
+
+    {% comment %} {%if text is not None %}
+        <h2>{{text}}</h2>
+    {%else %}
+        <p><h2>This month not came yet!<h2></p>
+    {% endif %} {% endcomment %}
+{% comment %} </body>
+
+</html> {% endcomment %} 
